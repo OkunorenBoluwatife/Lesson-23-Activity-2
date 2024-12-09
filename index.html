@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Push, Pop and join</title>
+</head>
+
+<body>
+
+    <h2>JavaScript </h2>
+    <h2>join(), pop() and push()</h2>
+
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        
+        document.getElementById("result1").innerHTML = "Original array: " + fruits;
+
+        document.getElementById("result2").innerHTML = "Array with join(): " + fruits.join(" * ");
+
+        fruits.pop();
+        document.getElementById("result3").innerHTML = "Array after pop(): " + fruits;
+
+        fruits.push("Grapes");
+        document.getElementById("result4").innerHTML = "Array after push(): " + fruits;
+    </script>
+</body>
+
+</html>
